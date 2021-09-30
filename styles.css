@@ -8,13 +8,36 @@ body {
     text-align:center;
     margin:auto;
     padding:0;
+    font-family: 'RobotoSlab', Helvetica, sans-serif;
 }
 
 /* grid layout */
 .container {
     display: grid;
+    grid-template-rows: repeat(150, 1fr);
+    gap: 10px;
+    grid-auto-columns: minmax(300px, auto);
     float: none;
     width: 100%;
+    height: 100%;
+}
+
+.intro{
+    grid-row: 1/76;
+    grid-column: 1;
+}
+
+.description{
+    grid-row: 76/151;
+    grid-column: 1;
+}
+
+.textbox{
+    position:absolute;
+    right:15%;
+    top  :30%;
+    font-size: 50px;
+    text-align: left;
 }
 
 
@@ -55,17 +78,59 @@ li:last-child {
 
 .nav-item:hover {
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px springgreen;
+    box-shadow: 0 5px 15px plum;
     transform: scale(2.0);
     /* padding: 12px; */
 }
-
+.nav-item:active{
+    color: #EE82EE;
+}
 
 /* intro */
 .intro{
     background-image: url("images/me-and-lightning.png");
+    background-size: 100% 100%;
+
+}
+
+.neon:hover{
+    /* give neon effect to title when hover */
+    /* https://css-tricks.com/how-to-create-neon-text-with-css/ */
+    color: #fff;
+    text-shadow:
+        /* White glow */
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        /* Green glow */
+        0 0 42px #EE82EE,
+        0 0 82px #EE82EE,
+        0 0 92px #EE82EE,
+        0 0 102px #EE82EE,
+        0 0 151px #EE82EE;
+
+        /* increase size of text */
+    transform: scale(1.1);
+}
+
+#role{
+    margin-top: -10%;
+    color: #C0C0C0;
+}
+
+#welcome{
+    padding: 0;
+    color: white;
+}
+
+#welcome:hover{
+    transform: scale(1.1);
 }
 
 
-
-
+/* font */
+@font-face{
+	font-family: 'RobotoSlab';
+	src:
+		url('webfonts/RobotoSlab-VariableFont_wght.ttf');
+}
