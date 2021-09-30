@@ -40,6 +40,18 @@ body {
     text-align: left;
 }
 
+.questions{
+    background-color: #303030;
+    opacity: .8;
+    grid-row: 1/76;
+    grid-column: 1;
+    width: 60%;
+    padding: 10%;
+    justify-self: center;
+    border-radius: 25px;
+    color: white;
+}
+
 
 /* nav bar */
 .nav-item{
