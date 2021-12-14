@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NYU Holiday Calender</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="holidayCalendar.css">
+	</head>
+	
+	<body>
+		<!-- Nav bar -->
+		<div class="nav">
+			<ul class="nav-list">
+				<li><a class="nav-item h1" href="../index.html">Home</a></li> 
+				<li><a class="nav-item h1 a" href="index.html"> Assignment #3 </a></li>
+				<li><a class="nav-item h1 a" href="crapGame.html"> Crap Game </a></li>
+				<li><a class="nav-item h1 a" href="holidayCalendar.html"> Holiday Calender </a></li>
+				<li><a class="nav-item h1 a" href=""> About </a></li>
+			</ul>
+		</div>
+
+		<h1>
+			NYU Holiday Calendar
+		</h1>
+
+		<form>
+			<!-- Ask user for input -->
+			<label for="date" style="color:white">Enter a date between September 1, 2021 and August 31, 2021</label>
+			<input id="date" type="date" name="date"/>
+
+			<div onclick="display()" id="result">
+					Click Here to Enter Date
+			</div>
+
+			<!-- message will display here -->
+			<p id=message>Message will display here</p>
+
+			<!-- image will display here -->
+			<div id=image></div>
+		</form>
+  	<script type="text/javascript" src="holidayCalendar.js"></script>
+	</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,87 @@
+/*CSS for band website*/
+
+/*Layout styles*/
+
+body {
+	background-image: url('spiderman-movie.jpeg');
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+.mainContent {
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+	
+
+}
+
+video {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+p {
+	font-family: 'RobotoSlab';
+    src:
+        url('../webfonts/RobotoSlab-VariableFont_wght.ttf');
+	font-size: 1.2em;
+	text-align: center;
+	background-color: white;
+	border: 1px solid red;
+	padding: 5%;
+}
+
+.nav {
+	font-family: 'RobotoSlab';
+    src:
+        url('../webfonts/RobotoSlab-VariableFont_wght.ttf');
+	font-size: 1.8em;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.links, .selected {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.header {
+	font-family: 'RobotoSlab';
+    src:
+        url('../webfonts/RobotoSlab-VariableFont_wght.ttf');
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+/*Link styles*/
+
+a:link, a:visited {
+	text-decoration: none;
+	color: red;
+}
+
+a:focus, a:hover {
+	color: white;
+}
+
+a:active {
+	opacity: 0.5;
+}
+
+a.selected:link, a.selected:visited {
+	color: red;
+}

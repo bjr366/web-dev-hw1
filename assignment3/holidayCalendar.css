@@ -1,0 +1,33 @@
+body{
+    color:white;
+    background-color: black;
+}
+
+form{
+    text-align: center;
+    background-color: #303030;
+    opacity: .9;
+    width: 90%;
+    padding: 2%;
+    border-radius: 25px;
+    color: white;
+}
+
+form:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px plum;
+}
+
+#result{
+    width: 30%;
+    height: 20px;
+    border: solid 2px rgba(255, 255, 255, 1);
+    margin: 5px auto;
+    border-radius: 25px;
+}
+
+#result:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px plum;   
+}
+

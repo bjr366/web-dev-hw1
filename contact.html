@@ -12,25 +12,72 @@
 	<div class="nav">
 		<ul class="nav-list">
 			<li><a class="nav-item h1" href="index.html">Home</a></li> 
-			<li><a class="nav-item h1 a" href=""> Assignment #1 </a></li>
-			<li><a class="nav-item h1 a" href=""> Assignment #2 </a></li>
-			<li><a class="nav-item h1 a" href=""> Assignment #3 </a></li>
+			<li><a class="nav-item h1 a" href="contact.html"> Assignment #1 </a></li>
+			<li><a class="nav-item h1 a" href="asg2/index.html"> Assignment #2 </a></li>
+			<li><a class="nav-item h1 a" href="assignment3/index.html"> Assignment #3 </a></li>
 			<li><a class="nav-item h1 a" href="contact.html">Contact Form</a></li>
 			<li><a class="nav-item h1 a" href=""> About </a></li>
 		</ul>
 	</div>
 
 	<div class="container">
-        <div class="questions">
-            <label for="cars">Choose a car:</label><br>
 
-            <select id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-            </select>
+        <div class="questions">
+			<h1>Questionnaire:</h1>
+			<h3>Fill out this quick and fun questionnaire. Click submit when finished.</h3><br>
+			<!-- Name -->
+			<form>
+				<label for="fname">First name:</label><br>
+  				<input type="text" id="firstname" name="firstname"><br>
+			</form><br>
+
+			<!-- Favorite Junk Food -->
+			<!-- Question -->
+            <label for="jfood">What is your favorite junk food:</label><br>
+			<!-- Answer -->
+            <select id="jfood">
+				<option value="burgers">Burgers</option>
+				<option value="chicken">Chicken Wings</option>
+				<option value="frchicken">Fried Chicken</option>
+				<option value="chinese">Fast Chinese Food</option>
+				<option value="mexican">Fast Mexican Food</option>
+				<option value="donuts">Donuts</option>
+				<option value="cake">Cake</option>
+				<option value="pie">Pie</option>
+				<option value="ramen">Instant Ramen</option>
+				<option value="cookies">Cookies</option>
+				<option value="other">Other</option>
+			</select>
+			
+			<!-- Other Junk Food -->
+			<form>
+				<label for="junkfood">If you selected other, enter your favorite junk food here:</label><br>
+  				<input type="text" id="junkfood" name="junkfood"><br>
+			</form><br>
+
+			<!-- Favorite Sport -->
+			<p>Choose your favorite Sport:</p>
+			<form>
+				<input type="radio" id="baseball" name="fav_sport" value="baseball">
+				<label for="baseball">Baseball</label><br>
+				<input type="radio" id="basketball" name="fav_sport" value="basketball">
+				<label for="basketball">Basketball</label><br>
+				<input type="radio" id="football" name="fav_sport" value="football">
+				<label for="football">Football</label><br>
+				<input type="radio" id="soccer" name="fav_sport" value="soccer">
+				<label for="soccer">Soccer</label><br>
+				<input type="radio" id="tennis" name="fav_sport" value="tennis">
+				<label for="tennis">Tennis</label><br>
+				<input type="radio" id="golf" name="fav_sport" value="golf">
+				<label for="golf">Golf</label>
+			</form><br><br>
+			<form>
+				<input type="submit" value="Submit">
+			</form>
         </div>
 	</div>
+	<footer style="color: white">
+		© 2021 BRIAN RIOS
+	</footer>
 </body>
 </html>

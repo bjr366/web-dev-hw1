@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <link rel="stylesheet" href="crapGame.css" type="text/css">
+  <title>Crap Game</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="crapGame.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div class="nav">
+		<ul class="nav-list">
+      <li><a class="nav-item h1" href="../index.html">Home</a></li> 
+      <li><a class="nav-item h1 a" href="index.html"> Assignment #3 </a></li>
+			<li><a class="nav-item h1 a" href="crapGame.html"> Crap Game </a></li>
+			<li><a class="nav-item h1 a" href="holidayCalendar.html"> Holiday Calender </a></li>
+			<li><a class="nav-item h1 a" href=""> About </a></li>
+		</ul>
+	</div>
+
+  <h1> 
+    Crap Game
+  </h1>
+  <h2>
+    Roll a total of 7 or 11 to win! If the total is 1,2, or 12 you lose!
+  </h2>
+
+<form>
+  <h2>Place Your Bet
+    <label for="bet">$</label>
+    <input id="bet" type=number name=bet min=5/>
+  </h2>
+  <h2>Die #1 is now <input name="die1" size="1" type="text"> 
+  <img src="dice_1.gif" align="center" width="135" height="135">
+  </h2>
+
+  <h2>Die 2 is now <input name="die2" size="1" type="text">
+  <img src="dice_1.gif" align="center" width="135" height="135">
+  </h2>
+
+  <h1>So, your total is: <input name="total" size="2" type="text"> 
+    <input value="roll the dice" onclick="rollIt()" type="button">
+    <input value="Reset" type="reset" />
+  </h1>
+  <h1 id="result"></h1>
+</form>
+  <script src="crapGame.js"> </script>
+</body>
+</html>

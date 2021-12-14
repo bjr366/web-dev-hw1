@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intitial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Products</title>
+</head>
+
+<body>
+
+	<div class="nav">
+		<ul class="nav-list">
+			<li><a class="nav-item h1" href="../index.html">Home</a></li> 
+			<li><a class="nav-item h1" href="index.html">Assignment 4</a></li>
+			<li><a class="nav-item h1 a" href="products.html"> Products </a></li>
+			<li><a class="nav-item h1 a" href="newNodes.html"> New Nodes </a></li>
+			<li><a class="nav-item h1 a" href=""> About </a></li>
+		</ul>
+	</div>
+
+    <h1 id="bigHeader">
+        Electric Vehicle Shopping Cart
+    </h2> 
+
+    <div class="main">
+        <!-- Tesla -->
+        <div class="item">
+            <h2>Tesla Model 3</h2>
+            <p>
+                Price: $<input type=number id=price value=39999 readonly>
+            
+            <p>
+            <form>
+                <!-- TODO some forms here -->
+                <!-- quantity -->
+                <label for="qt">Quantity:</label>
+                <!-- <input type="number" id="quanity" name="quantity"
+                min="0" max="100"> -->
+                <input type="number" name="qt" id="qt">
+            </form>
+            <!-- Total Price-->
+            <div>
+                <p id=result>
+                    Subtotal: 0
+                </p>
+            </div>
+            <img id="img1" src="images/tesla-model3.png" alt="tesla"><br>
+        </div> <!-- end of tesla -->
+
+
+        <!-- ------------------------------ -->
+        <!-- Benz -->
+        <div class="item">
+            <h2>Mercedes Benz EQS</h2>
+            <p>
+                Price: $<input type=number id=price2 value=129999 readonly>
+            
+            <p>
+            <form>
+                <!-- TODO some forms here -->
+                <!-- quantity-->
+                <label for="qt2">Quantity:</label>
+                <input type="number" id="qt2" name="qt2">
+                <!-- <input type="number" name="qt" id="qt"> -->
+            </form>
+            <div>
+                <p id=result2>
+                    Subtotal: 0
+                </p>
+            </div>
+            <img id="img2" src="images/benz-eqs.jpeg" alt="benz">
+        </div> <!-- end of benz-->
+
+    </div>
+    <div class="item">
+        <p>
+            Select a shipping method: <select id="shippingMethod" name="Shipping Method" >
+
+            <option value="pick-up" selected>In-Store Pick-Up</option>
+            <option value="shipping">Shipping</option>
+        
+            </select>
+        </p>
+        <p id=shipping>Shipping Cost: $0 </p>
+        <h2 id="grandTotal">
+            Grand-Total: $0
+        </h2>
+    </div>
+
+    <div class="userInfo item">
+        <h2>Check Out</h2>
+        <h3 style="color:#f00"> Enter Your Name, Email, Address,
+         Credit Card Type, Credit Card Number, Expiration Date and then click Submit button below. </h3>
+        <p> Using onsubmit() event to validate an entire form </p>
+
+        <!-- use onsubmit() event to trigger a function called validate1()-->
+
+        <form action="#" >
+            First name: <input type="text" name="First Name" ><br>
+            Last name: <input type="text" name="Last Name" ><br><br>
+
+            Zip: <input type=number name="Zip"><p>
+            Email: <input type=email name="Email"><p>
+
+            Address: <input type="text" name="Address" ><br>
+
+            <p>
+                <label for="Credit Card"> Credit Card Type: </label>
+                AMEX<input name="Credit Card" type="radio" value="Amex">
+                Visa<input name="Credit Card" type="radio" value="Visa" >
+                MasterCard<input name="Credit Card" type="radio" value="MasterCard" >
+            <p>
+                 
+            <!-- TODO -->
+            <!-- note: When we display in receipt we want it to have 
+            a place holder of X's except for the last 4 digits -->
+            <p>Credit Card Number: <input name="Credit Card Number" id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></p>
+
+            <p>Expiration Date: <input name="Expiration Date" type="date" value="date"></p>
+
+            <p>Click "submit" to validate and display output (Receipt).</p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form> 
+
+        <hr color="#F00">
+
+        <p id="receipt" style="background-color:yellow; color:green"> Display ouput (Receipt) here or inside a new document</p>
+    </div>
+    
+	<footer style="color: white">
+		© 2021 BRIAN RIOS
+	</footer>
+
+    <script type="text/javascript" src="asg4cart.js"></script>
+</body>
+</html>

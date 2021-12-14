@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intitial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Assignment #1</title>
+</head>
+
+<body>
+
+	<div class="nav">
+		<ul class="nav-list">
+			<li><a class="nav-item h1" href="../index.html">Home</a></li> 
+			<li><a class="nav-item h1 a" href="../contact.html"> Assignment #1 </a></li>
+			<li><a class="nav-item h1 a" href="index.html"> Assignment #2 </a></li>
+			<li><a class="nav-item h1 a" href="../assignment3/index.html"> Assignment #3 </a></li>
+			<li><a class="nav-item h1 a" href="../contact.html">Contact Form</a></li>
+			<li><a class="nav-item h1 a" href=""> About </a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="part1">
+			<button onclick="change()" id="changeStyles">Change styles</button>
+		</div>
+
+		<div class="part2">
+			<button onclick="randPrize()" id="randomPrize">Click to win a prize</button>
+			<p id="prize"></p>
+		</div>
+
+		<div class="part3">
+			<p id="p1" onclick="swapT()">Paragraph #1</p>
+			<p id="p2" onclick="swapT()">Paragraph #2</p>
+		</div>
+
+		<div class="part5">
+			<a href="fortuneC.html"> Click to get your fortune Cookie</a>
+		</div>
+	</div>
+	<!-- part 4 -->
+	<img id="img1" src="images/tesla-model3.png" alt="image1" onclick="swapImg()">
+	<img id="img2" src="images/benz-eqs.jpeg" alt="image 2" onclick="swapImg()">
+	<footer style="color: white">
+		© 2021 BRIAN RIOS
+	</footer>
+
+	<script src="asg2.js"></script>
+</body>
+</html>
