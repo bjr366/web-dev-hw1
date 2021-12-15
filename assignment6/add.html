@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intitial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Mad Libs</title>
+</head>
+
+<body>
+
+	<div class="nav">
+		<ul class="nav-list">
+			<li><a class="nav-item h1" href="../index.html">Home</a></li> 
+			<li><a class="nav-item h1" href="index.html">Assignment 6</a></li> 
+			<li><a class="nav-item h1 a" href="madlibs.html"> Mad Libs </a></li>
+			<li><a class="nav-item h1 a" href="add.html"> Add </a></li>
+		</ul>
+	</div>
+
+	<div class="item">
+        <!-- TODO -->
+        <form action="add.php" method="post">
+            Enter first number: <input type="number" name="num1" step="any"><br>
+            Enter second number: <input type="number" name="num2" step="any"><br>
+            <label for="operation">Select an operation</label>
+            <select name="operation">
+				<option value="+">Add</option>
+				<option value="-">Subtract</option>
+				<option value="*">Multiply</option>
+				<option value="/">Divide</option>
+			</select>
+            <br>
+            <input type="reset">
+            <input type="submit">
+            
+        </form>
+
+	</div>
+	<footer style="color: white">
+		© 2021 BRIAN RIOS
+	</footer>
+</body>
+</html>
