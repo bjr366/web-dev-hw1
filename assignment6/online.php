@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,intitial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="receipt.css">
-	<title>Receipt</title>
+    <?php include('header.php'); ?>
 </head>
 <body>
 
 	<?php 
-	
+	echo "<div class='item'>";
+	echo "<h1>Thank you for your purchase!</h1>";
+
 	$name = $_POST["name"];
 	echo '<p>Name: '.$name.'</p>';
 	$email = $_POST["email"];
@@ -20,32 +19,34 @@
 	
 	//samsung
         if (strcmp($phone, "samsung") == 0){
-	        echo '<p> Phone Selected: Samsung Galaxy Z Fold';
+	        echo '<p>Phone Selected: Samsung Galaxy Z Fold 3</p>';
         }
 
         // iphone
         elseif(strcmp($phone, "iphone") == 0){
-	        echo '<p> Phone Selected: iPhone 13 Pro';
+	        echo '<p>Phone Selected: iPhone 13 Pro</p>';
         
 	}
 	
 	$quantity = $_POST["quantity"];
 	echo '<p>Quantity: '.$quantity.'</p>';
 	
-	echo '<p>We made it here<p>';
+
 	//select price according to phone selection
 	$price = 0;
-	if(strcmp($phone, "apple") == 0){
-		$price = 1000;
+	if(strcmp($phone, "iphone") == 0){
+		$price = 1180;
 	}
 	elseif(strcmp($phone, "samsung") == 0){
-		$price = 800;
+		$price = 745;
 	}
 
-	echo'<p>Phone Price'.$price.'</p>';
-	// // calculate total price
-	// $totalprice = $price * $quantity;
-	
+	echo'<p>Phone Price: $'.$price.'</p>';
+
+	// calculate total price
+	$totalprice = intval($price) * intval($quantity);
+	echo'<p><b>Total Price: $'.$totalprice.'</b></p>';
+	echo "</div>";
 	?>
 </body>
 </html>

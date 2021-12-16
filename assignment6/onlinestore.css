@@ -1,10 +1,40 @@
 body{
-	background-color: "black";
+	background-color: black;
 	text-align: left;
+	color: black;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+	font-family: 'RobotoSlab', Helvetica, sans-serif;
 	
 }
 
+/* receipt */
 .item{
-	background-color: "#8FBC8F";
-	text-align: left;
+	
+	background-color: #8FBC8F;
+	text-align: left; 
+
+	/* round corners */
+	border-radius: 25px;
+	padding: 40px;
+	width: 600px;
+	height: 450px;
+}
+
+
+form{
+	border: dotted white 2px;
+}
+
+/* font */
+@font-face{
+    font-family: 'RobotoSlab';
+    src:
+        url('webfonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
+h1:hover{
+	color: #778899;
 }
