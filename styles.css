@@ -301,6 +301,9 @@ li:last-child {
 /* ---------------------------------------------------------- */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .nav-item{
+        margin-right: -10px;
+    }
     li{
         display: inline-block;
         padding-bottom: 0;
@@ -368,6 +371,9 @@ li:last-child {
 }
 
 @media only screen and (min-width: 1200px) {
+    .nav-item{
+        margin-right: -10px;
+    }
     li{
         display: inline-block;
         padding-bottom: 0;
