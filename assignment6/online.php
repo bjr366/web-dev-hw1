@@ -15,9 +15,19 @@
 	$email = $_POST["email"];
 	echo '<p>Email: '.$email.'</p>';
 
-
+	
 	$phone = $_POST["phone"];
-	echo '<p>Phone: '.$phone.'</p>';
+	
+	//samsung
+        if (strcmp($phone, "samsung") == 0){
+	        echo '<p> Phone Selected: Samsung Galaxy Z Fold';
+        }
+
+        // iphone
+        elseif(strcmp($phone, "iphone") == 0){
+	        echo '<p> Phone Selected: iPhone 13 Pro';
+        
+	}
 	
 	$quantity = $_POST["quantity"];
 	echo '<p>Quantity: '.$quantity.'</p>';
